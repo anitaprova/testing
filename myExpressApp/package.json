@@ -1,44 +1,36 @@
 {
   "homepage": "http://anitaprova.github.io/testing",
   "name": "myexpressapp",
-  
   "version": "0.0.0",
-  
   "private": true,
-  
   "scripts": {
-  "predeploy":"npm run build",
-  "deploy": "gh-pages -d build",
-  "start": "node ./bin/www"
-  
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "build": "react-scripts build",
+    "start": "node ./bin/www"
   },
-  
   "dependencies": {
-  
-    
-  "cookie-parser": "~1.4.4",
-  
-    
-  "debug": "~2.6.9",
-  
-    
-  "express": "~4.16.1",
-  
-    
-  "http-errors": "~1.6.3",
-  
-    
-  "morgan": "~1.9.1",
-  
-    
-  "pug": "2.0.0-beta11"
-  
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "morgan": "~1.9.1",
+    "pug": "2.0.0-beta11",
+    "react-scripts": "^5.0.1"
   },
-  
   "devDependencies": {
-  
-    
-  "gh-pages": "^6.1.1"
-  
+    "gh-pages": "^6.1.1"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
